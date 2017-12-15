@@ -1,4 +1,22 @@
 .navbar {
-    display: flex;
+    display: inline-block;
     flex-direction: row;
+    width: 100%;
+}
+
+.navbar li {
+    display: inline-block;
+    color: blue;
+    font-size: 30px;
+    float: right;
+    margin-right: 40px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+#red_text {
+    color: red;
 }
