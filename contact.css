@@ -4,7 +4,7 @@
 }
 
 section {
-    height: 700px;
+    height: 300px;
     width: 700px;
     /* CSS Grid   ----- 31D     */
     display: grid;
@@ -25,4 +25,9 @@ div {
     background: var(--main-color);
     grid-column-start: 4;
     grid-row-start: 3;
+}
+
+video {
+    height: 400px;
+    width: 500px;
 }
