@@ -1,0 +1,28 @@
+/* CSS Variables used twice 31C */
+:root {
+    --main-color: red;
+}
+
+section {
+    height: 700px;
+    width: 700px;
+    /* CSS Grid   ----- 31D     */
+    display: grid;
+    grid-template-columns: repeat(8 12.5%);
+    grid-template-rows: 25% 25% 25% 25%;
+    background: rgb(197, 145, 145);
+}
+
+h1 {
+    color: var(--main-color);
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+div {
+    height: 40px;
+    width: 70px;
+    background: var(--main-color);
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
