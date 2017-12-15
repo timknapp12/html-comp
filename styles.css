@@ -1,22 +1,98 @@
+
+/* background image 23F */
+body {
+    background-image: url(/assets/Slopes_DarkBlue.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+.comp_section {
+    position: relative;
+}
+
 .navbar {
     display: inline-block;
     flex-direction: row;
     width: 100%;
 }
 
+/* descendant combinator 22C-4 */
 .navbar li {
+    /* display inline block 25F */
     display: inline-block;
+    /* font size and color 23D */
     color: blue;
     font-size: 30px;
+    /*          float 25D     */
     float: right;
+    /*       margin 24C      */
     margin-right: 40px;
 }
 
+/* position absolute 25C */
+.comp_div {
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    /* background color 23E */
+    background-color: lightgray;
+    /* border -------24D       */
+    border: 3px dotted green;
+    /* padding -------  24E */
+    padding: 30px;
+}
+
+/* adjacent sibling combinator 22C-5 */
+h1 + p {
+    color: yellow;
+}
+/* class selector 22C - 2 */
 .logo {
+    position: relative;
+    left: 20px;
+    bottom: 20px;
     width: 100px;
     height: 100px;
 }
 
+/* id selector 22C-1 */
 #red_text {
     color: red;
+}
+
+/* CSS selectors > 22C-3 */
+.comp_div > div {
+    /*       box-sizing 24F       */
+    box-sizing: border-box;
+    height: 20px;
+    background: blue;
+}
+
+.flex_box {
+    width: 400px;
+    height: 200px;
+    /* display flex      27G */
+    display: flex;
+    /* justify content    27C      */
+    justify-content: space-around;
+    /* flex  direction    27  F */
+    flex-direction: row;
+    /* align-items      27D */
+    align-items: center;
+    /* flex-wrap       27E */
+    flex-wrap: nowrap;
+    color: darkblue;
+    /* gradient css        30D */
+    background: linear-gradient(45deg, lightblue, green);
+}
+
+.scroll {
+    height: 100px;
+    width: 150px;
+    /* text effects    overflow scroll 30E */
+    overflow: scroll;
+    /* box-shadow      30C    */
+    box-shadow: 0 5px 5px 5px black;
 }
